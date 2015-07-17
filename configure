@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#install flask, virtualenv, and fuckit
+pip install flask virtualenv fuckit
+
+#install flask in virtualenv
+flask/bin/pip install flask flask-login flask-openid flask-mail flask-sqlalchemy flask-whooshalchemy flask-wtf flask-babel guess_language flipflop coverage
+
+#set up executables
+chmod +x ./start.sh
+chmod +x ./metrics.py
+
+echo Done!
